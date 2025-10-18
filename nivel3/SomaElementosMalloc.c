@@ -32,5 +32,6 @@ int main(){
 
     printf("\nA soma de todos os elementos do vetor eh %d", soma_vetor);
 
+    free(ponteiro);
 
 }
