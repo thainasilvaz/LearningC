@@ -78,3 +78,4 @@ void insere_meio(Lista *lista, int valor, int indice_insercao){
 void destroi_lista(Lista *lista){
 	free(lista);
 }
+
