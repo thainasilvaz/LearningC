@@ -54,3 +54,32 @@ void destruirLista(ListaLigada *lista){
         atual = proximo; // avança para o próximo nó
     }
 }
+
+ListaLigada* inserirInicio(ListaLigada *lista, int novo_valor){
+
+    ListaLigada *novo_no = (ListaLigada*)malloc(sizeof(ListaLigada)); //cria um novo nó na memoria
+
+    if (novo_no == NULL) {
+        printf("Erro ao alocar memória.\n");
+        return lista;
+    }
+
+    novo_no->valor = novo_valor;
+    novo_no->proximo = lista; //fazendo o novo nó apontar para o antigo primeiro nó
+
+    return novo_no;
+
+}
+
+int tamanhoLista(ListaLigada *lista){
+
+    int tamanho = 0;
+
+    while (lista != NULL) {
+        tamanho++;
+        lista = lista->proximo; // avança para o próximo nó
+    }
+
+    return tamanho;
+
+}

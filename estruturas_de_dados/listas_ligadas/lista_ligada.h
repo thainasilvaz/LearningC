@@ -7,7 +7,8 @@ typedef struct No{ //No é o nome interno da struct e ListaLigada é o apelido
 ListaLigada* inserirFinal(ListaLigada *first_no, int novo_valor); //retorna um ponteiro para o início da lista
 void imprimirLista(ListaLigada  *lista);
 void destruirLista(ListaLigada *lista);
-//inserirInicio
+ListaLigada* inserirInicio(ListaLigada *first_no, int novo_valor);
+int tamanhoLista(ListaLigada *lista);
 //inserirMeio
 //removerElemento
 //buscarElemento

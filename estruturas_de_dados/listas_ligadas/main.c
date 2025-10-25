@@ -9,7 +9,11 @@ int main(){
     lista = inserirFinal(lista, 20);
     lista = inserirFinal(lista, 30);
     imprimirLista(lista);
-    destruirLista(lista);
+    lista = inserirInicio(lista, 35);
+    imprimirLista(lista); 
+    int tamanho = tamanhoLista(lista);
+    printf("A lista possui %d elementos.", tamanho);
+    destruirLista(lista);   
 
     return 0;
 }
