@@ -12,3 +12,4 @@ int tamanhoLista(ListaLigada *lista);
 //inserirMeio
 //removerElemento
 //buscarElemento
+//ordenarLista
